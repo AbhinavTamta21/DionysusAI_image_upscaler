@@ -24,6 +24,7 @@ outputs/
 # Keep branding assets tracked
 !Dionysus_AI_logo.png
 !Dionysus_AI_logo.ico
+!Results/*.png
 
 # IDE and OS files
 .vscode/
