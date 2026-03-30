@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-upscaler"
+version = "0.1.0"
+description = "Desktop AI image upscaler with selectable CUDA and OpenCL backends."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "customtkinter>=5.2.2",
+  "numpy>=1.26.0",
+  "opencv-python>=4.10.0",
+  "Pillow>=10.4.0",
+  "onnxruntime>=1.18.0",
+]
+
+[project.optional-dependencies]
+nvidia = ["onnxruntime-gpu>=1.18.0"]
+
+[project.scripts]
+ai-upscaler = "ai_upscaler.main:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
