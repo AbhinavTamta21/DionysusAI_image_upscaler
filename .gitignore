@@ -13,9 +13,7 @@ build/
 dist/
 *.egg-info/
 
-# Local models and generated media
-models/*.onnx
-models/*.ort
+# Generated media
 outputs/
 *.png
 *.jpg

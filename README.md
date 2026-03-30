@@ -23,7 +23,7 @@ Python desktop app for AI image upscaling with a Dionysus-branded dark GUI and s
 
 ## Important limitations
 
-- This project does not ship model weights in the repository.
+- This repository includes sample ONNX models in the local `models/` folder for testing and demonstration.
 - For `CUDA`, install `onnxruntime-gpu` and matching NVIDIA CUDA/cuDNN dependencies.
 - For `TensorRT`, install the TensorRT runtime libraries supported by your ONNX Runtime build.
 - For `OpenCL`, install a GPU driver that exposes OpenCL and use an ONNX model OpenCV DNN can run.
@@ -51,7 +51,7 @@ ai-upscaler
 
 ## Models
 
-Place ONNX upscaling models in the local `models/` folder to make them appear in the GUI dropdown, or browse to a model manually from the app.
+The repository already includes sample ONNX upscaling models in the local `models/` folder, and you can add more models there to make them appear in the GUI dropdown. You can also browse to a model manually from the app.
 
 The current pipeline assumes a typical image-to-image super-resolution model with:
 
@@ -71,5 +71,6 @@ Keep these in the repository:
 - `README.md`
 - `Dionysus_AI_logo.png`
 - `Dionysus_AI_logo.ico`
+- `models/`
 
 Do not commit generated folders like `build/`, `dist/`, or large local model weights unless you intentionally want them versioned.
