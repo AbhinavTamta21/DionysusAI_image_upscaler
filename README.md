@@ -121,4 +121,4 @@ Keep these in the repository:
 - `Dionysus_AI_logo.png`
 - `Dionysus_AI_logo.ico`
 
-Do not commit generated folders like `build/`, `dist/`, or temporary local output files unless you intentionally want them versioned.
+
